@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Number Guesser</title>
+
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:700,300" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+
+			<h1><span class="styled">Number</span> Guesser</h1>
+			
+		</header>
+		<main>
+			
+			<input id="setMinimum" type="number" placeholder="Set Minimum">
+			<input id="setMaximum" type="number" placeholder="Set Maximum">
+			<button class="userSet" disabled>Set Your Own Range</button>
+
+			<hr>
+
+			<span id="levelUp"></span>
+
+			<p>I'm thinking of a number between <span id="newMin">0</span> and <span id="newMax">100</span>, can you guess?</p>
+
+			<input id="getGuess" type="number" placeholder="Enter your guess" min="1" max="100" autocomplete="off">
+			<button class="guessButton" value="Guess" disabled>Guess</button>
+			<button class="clear" value="Clear" disabled>Clear</button>
+			
+			<p>Your last guess was</p>
+
+			<span id="display">*</span>
+
+			<p id="msg">I'll give you some hints...</p>
+
+			<button class="reset" type="reset" value="Reset" disabled>Reset</button>
+
+		</main>
+	<script src="main.js"></script>	
+	</body>
+</html>	
